@@ -9,4 +9,8 @@ void main() {
   } on FormatException {
     print("Format invalide : veuillez entrer un nombre.");
 }
-}
+finally {
+    print("Fin d'opération");
+  }
+  }
+
