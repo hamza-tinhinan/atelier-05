@@ -1,11 +1,14 @@
+import 'dart:io';
+
 void main() {
   try {
-    int resultat = 12 ~/ 0;
-    print("Résultat : $resultat");
-  } catch (e) {
-    print("Division impossible");
+    stdout.write("Entrez votre âge : ");
+    String? saisie = stdin.readLineSync();
+    int age = int.parse(saisie!);
+    print("Votre âge est $age ans");
+  } on FormatException {
+    print("Format invalide : veuillez entrer un nombre.");
+  } finally {
+    print("Fin d'opération");
   }
 }
-      
-
-      
