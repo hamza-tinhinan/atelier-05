@@ -1,6 +1,6 @@
 void main() {
   try {
-    verifierMotdepasse("123hhgkggfu");
+    verifierMotdepasse("123564");
   } catch (e) {
     print("Erreur : $e");
   }
@@ -13,3 +13,5 @@ void verifierMotdepasse(String mp) {
     print("Mot de passe valide !");
   }
 }
+
+
